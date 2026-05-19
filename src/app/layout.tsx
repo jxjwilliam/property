@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "A cinematic carousel for condo and environment shots, designed for fast browsing on desktop and mobile.",
   icons: {
-    icon: "/icon.svg",
+    icon: "/favicon.svg",
   },
 };
 

@@ -81,9 +81,9 @@ const titleMap: Record<string, string> = {
 };
 
 export const statsData: GalleryStat[] = [
-  { value: "75", label: "Uploaded frames" },
-  { value: "4", label: "Featured sources" },
-  { value: "3K", label: "Best photo size" },
+  { value: "Brand new", label: "Summer-ready rental" },
+  { value: "SkyTrain", label: "Transit access" },
+  { value: "Mall + park", label: "Walkable convenience" },
 ];
 
 function imageUrl(fileName: string): string {

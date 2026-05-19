@@ -29,7 +29,11 @@ const initialForm: FormFields = {
   message: "",
 };
 
-export function InquiryForm() {
+interface InquiryFormProps {
+  id?: string;
+}
+
+export function InquiryForm({ id }: InquiryFormProps) {
   const [form, setForm] = useState<FormFields>(initialForm);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
@@ -68,10 +72,10 @@ export function InquiryForm() {
   const labelClass = "block text-sm text-[var(--muted-foreground)] mb-1.5";
 
   const dateTriggerClass =
-    "w-full flex items-center justify-between rounded-xl border border-[var(--line)] bg-[rgba(9,11,15,0.72)] px-4 py-2.5 text-sm text-[var(--foreground)] hover:border-[var(--primary)] transition-colors duration-180";
+    "w-full flex items-center justify-between rounded-xl border border-[var(--line)] bg-[rgba(9,11,15,0.72)] px-4 py-2.5 text-sm text-[var(--foreground)] hover:border-primary transition-colors duration-180";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form id={id} onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label className={labelClass}>Name</label>
@@ -126,7 +130,7 @@ export function InquiryForm() {
         <Button
           type="submit"
           disabled={status === "submitting"}
-          className="bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 cursor-pointer"
+          className="bg-primary text-primary-foreground hover:opacity-90 cursor-pointer"
         >
           {status === "submitting" ? "Sending..." : "Send inquiry"}
         </Button>
