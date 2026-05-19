@@ -1,19 +1,17 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { GalleryGroup, GalleryStat } from "@/config/gallery";
-import { getFilteredItems } from "@/config/gallery";
-import { StatsBar } from "./stats-bar";
+import type { GalleryGroup } from "@/config/gallery";
+import { getFilteredItems, getGroup } from "@/config/gallery";
 import { FilterBar } from "./filter-bar";
 import { Filmstrip } from "./filmstrip";
 import { HeroViewer } from "./hero-viewer";
 
 interface GalleryProps {
   groups: GalleryGroup[];
-  stats: GalleryStat[];
 }
 
-export function Gallery({ groups, stats }: GalleryProps) {
+export function Gallery({ groups }: GalleryProps) {
   const [filterKey, setFilterKey] = useState("all");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playing, setPlaying] = useState(true);
@@ -87,9 +85,7 @@ export function Gallery({ groups, stats }: GalleryProps) {
   }, [playing, clearTimer, startTimer]);
 
   return (
-    <div className="space-y-6">
-      <StatsBar stats={stats} />
-
+    <aside className="panel" aria-label="Current slide preview">
       <HeroViewer
         items={items}
         currentIndex={currentIndex}
@@ -101,25 +97,27 @@ export function Gallery({ groups, stats }: GalleryProps) {
         onResume={startTimer}
       />
 
-      <div className="flex flex-wrap gap-2.5">
-        <FilterBar groups={groups} activeKey={filterKey} onFilterChange={handleFilterChange} />
-        <span className="rounded-full border border-[var(--line)] bg-[rgba(255,255,255,0.05)] px-3 py-2 text-xs text-[var(--muted-foreground)] self-center">
-          Tap a frame to jump
+      <div className="status-row">
+        <span className="badge">
+          {items.length ? `${String(currentIndex + 1).padStart(2, "0")} / ${String(items.length).padStart(2, "0")}` : "0 / 0"}
         </span>
+        <span className="badge">{`${getGroup(filterKey).label} frames`}</span>
+        <span className="badge">Tap a frame to jump</span>
       </div>
 
-      <div>
-        <div className="flex justify-between items-end gap-4 mb-3.5">
-          <h2 className="font-serif text-xl sm:text-2xl tracking-tight text-[var(--foreground)] m-0">
-            Carousel frames
-          </h2>
-          <p className="text-sm text-[var(--muted-foreground)] max-w-[52ch] text-right m-0">
-            Swipe horizontally, click any frame, or use the arrow keys. The active image stays large
-            and centered.
-          </p>
+      <div className="filter-bar" id="filterBar" aria-label="Gallery filters">
+        <FilterBar groups={groups} activeKey={filterKey} onFilterChange={handleFilterChange} />
+      </div>
+
+      <section aria-label="Frame carousel">
+        <div className="section-head">
+          <div>
+            <h2>Carousel frames</h2>
+          </div>
+          <p>Swipe horizontally, click any frame, or use the arrow keys. The active image stays large and centered.</p>
         </div>
         <Filmstrip items={items} activeIndex={currentIndex} onSelect={handleSelect} />
-      </div>
-    </div>
+      </section>
+    </aside>
   );
 }
