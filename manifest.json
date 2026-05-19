@@ -1,0 +1,388 @@
+{
+  "generatedAt": "2026-05-19T02:17:42.469Z",
+  "minLongEdge": 1200,
+  "copiedCount": 76,
+  "copied": [
+    {
+      "relativePath": "phone__Weixin Image_20260518190536_13_1.jpg",
+      "width": 1904,
+      "height": 4096
+    },
+    {
+      "relativePath": "phone__Weixin Image_20260518190540_14_1.jpg",
+      "width": 4096,
+      "height": 1904
+    },
+    {
+      "relativePath": "phone__Weixin Image_20260518190543_15_1.jpg",
+      "width": 4096,
+      "height": 1904
+    },
+    {
+      "relativePath": "phone__Weixin Image_20260518190547_16_1.jpg",
+      "width": 4096,
+      "height": 1904
+    },
+    {
+      "relativePath": "phone__Weixin Image_20260518190550_17_1.jpg",
+      "width": 4096,
+      "height": 1904
+    },
+    {
+      "relativePath": "scraped-media__linkedin__image-001.jpg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "relativePath": "scraped-media__matterport__image-001.jpg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-001.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-002.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-011.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-012.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-013.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-014.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-019.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-020.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-021.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-022.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-023.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-024.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-025.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-026.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-027.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-028.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-029.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-030.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-031.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-032.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-033.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-034.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-035.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-036.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-037.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-038.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-039.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-040.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-041.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-042.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-043.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-044.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-045.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-046.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__realtor-ca__image-047.jpg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-001.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-002.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-003.jpeg",
+      "width": 3072,
+      "height": 2048
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-004.jpeg",
+      "width": 3000,
+      "height": 2001
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-005.jpeg",
+      "width": 3000,
+      "height": 2001
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-006.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-007.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-008.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-009.jpeg",
+      "width": 3072,
+      "height": 2048
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-010.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-011.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-012.jpeg",
+      "width": 3072,
+      "height": 2048
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-013.jpeg",
+      "width": 3072,
+      "height": 2172
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-014.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-015.jpeg",
+      "width": 3072,
+      "height": 2048
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-016.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-017.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-018.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-019.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-020.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-021.jpeg",
+      "width": 3072,
+      "height": 2050
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-022.jpeg",
+      "width": 3072,
+      "height": 2050
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-023.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-024.jpeg",
+      "width": 3072,
+      "height": 2051
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-025.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-026.jpeg",
+      "width": 3072,
+      "height": 2047
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-027.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-028.jpeg",
+      "width": 3072,
+      "height": 2053
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-029.jpeg",
+      "width": 3072,
+      "height": 2048
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-030.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-031.jpeg",
+      "width": 3072,
+      "height": 2047
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-032.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-033.jpeg",
+      "width": 3072,
+      "height": 2049
+    },
+    {
+      "relativePath": "scraped-media__rew-ca__image-034.jpeg",
+      "width": 3072,
+      "height": 2049
+    }
+  ],
+  "flattened": true
+}
