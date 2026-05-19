@@ -46,6 +46,18 @@ export function HeroViewer({
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const tagName = target?.tagName;
+      if (
+        target?.isContentEditable ||
+        tagName === "INPUT" ||
+        tagName === "TEXTAREA" ||
+        tagName === "SELECT" ||
+        tagName === "BUTTON"
+      ) {
+        return;
+      }
+
       if (e.key === "ArrowLeft") {
         onPrev();
       } else if (e.key === "ArrowRight") {
