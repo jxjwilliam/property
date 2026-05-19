@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, date, checkIn, checkOut, guests, message } = body;
+    const { name, email, checkInDate, checkOutDate, guests, message } = body;
 
     const smtpUser = process.env.SMTP_EMAIL;
     const smtpPass = process.env.SMTP_PASSWORD;
@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const shouldSend = smtpUser && smtpPass;
 
     if (!shouldSend) {
-      console.warn("SMTP not configured — inquiry logged:", { name, email, date });
+      console.warn("SMTP not configured — inquiry logged:", { name, email, checkInDate });
     } else {
       const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -28,9 +28,8 @@ export async function POST(request: Request) {
           <table style="border-collapse:collapse;width:100%;max-width:500px">
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Name</td><td style="padding:8px;border:1px solid #ddd">${name}</td></tr>
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Email</td><td style="padding:8px;border:1px solid #ddd">${email}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Date</td><td style="padding:8px;border:1px solid #ddd">${date}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Check-in</td><td style="padding:8px;border:1px solid #ddd">${checkIn}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Check-out</td><td style="padding:8px;border:1px solid #ddd">${checkOut}</td></tr>
+            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Check-in date</td><td style="padding:8px;border:1px solid #ddd">${checkInDate}</td></tr>
+            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Check-out date</td><td style="padding:8px;border:1px solid #ddd">${checkOutDate}</td></tr>
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Guests</td><td style="padding:8px;border:1px solid #ddd">${guests}</td></tr>
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold">Message</td><td style="padding:8px;border:1px solid #ddd">${message || "—"}</td></tr>
           </table>

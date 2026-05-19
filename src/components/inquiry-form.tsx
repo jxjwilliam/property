@@ -6,9 +6,8 @@ import { Button } from "@/components/ui/button";
 interface FormFields {
   name: string;
   email: string;
-  date: string;
-  checkIn: string;
-  checkOut: string;
+  checkInDate: string;
+  checkOutDate: string;
   guests: string;
   message: string;
 }
@@ -16,9 +15,8 @@ interface FormFields {
 const initialForm: FormFields = {
   name: "",
   email: "",
-  date: "",
-  checkIn: "",
-  checkOut: "",
+  checkInDate: "",
+  checkOutDate: "",
   guests: "1",
   message: "",
 };
@@ -65,16 +63,12 @@ export function InquiryForm() {
           <input type="email" required value={form.email} onChange={update("email")} placeholder="your@email.com" className={inputClass} />
         </div>
         <div>
-          <label className={labelClass}>Date</label>
-          <input type="date" required value={form.date} onChange={update("date")} className={inputClass} />
+          <label className={labelClass}>Check-in date</label>
+          <input type="date" required value={form.checkInDate} onChange={update("checkInDate")} className={inputClass} />
         </div>
         <div>
-          <label className={labelClass}>Check-in time</label>
-          <input type="time" required value={form.checkIn} onChange={update("checkIn")} className={inputClass} />
-        </div>
-        <div>
-          <label className={labelClass}>Check-out time</label>
-          <input type="time" required value={form.checkOut} onChange={update("checkOut")} className={inputClass} />
+          <label className={labelClass}>Check-out date</label>
+          <input type="date" required value={form.checkOutDate} onChange={update("checkOutDate")} className={inputClass} />
         </div>
         <div>
           <label className={labelClass}>Number of guests</label>
