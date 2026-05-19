@@ -327,36 +327,8 @@ body::after {
   background: linear-gradient(180deg, transparent, rgba(5, 6, 8, 0.92) 70%);
   display: flex;
   align-items: end;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
-}
-
-.hero-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 0;
-}
-
-.hero-meta .source {
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.hero-meta .caption {
-  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  margin: 0;
-}
-
-.hero-meta .subcaption {
-  font-size: 0.92rem;
-  color: var(--muted);
 }
 
 .controls {
@@ -474,7 +446,7 @@ body::after {
 
 .card {
   scroll-snap-align: start;
-  padding: 12px;
+  padding: 0;
   border-radius: 24px;
   border: 1px solid var(--line);
   background:
@@ -498,7 +470,7 @@ body::after {
 .frame {
   position: relative;
   aspect-ratio: 4 / 5;
-  border-radius: 18px;
+  border-radius: 24px;
   overflow: hidden;
   background: #0c0e12;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -517,33 +489,6 @@ body::after {
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 28%, rgba(0, 0, 0, 0.08));
   pointer-events: none;
-}
-
-.card-meta {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: end;
-  margin-top: 12px;
-}
-
-.card-meta strong {
-  display: block;
-  font-size: 0.9rem;
-  line-height: 1.2;
-}
-
-.card-meta span {
-  display: block;
-  color: var(--muted);
-  font-size: 0.76rem;
-  margin-top: 2px;
-}
-
-.card-index {
-  font-size: 0.75rem;
-  color: rgba(244, 239, 231, 0.54);
-  white-space: nowrap;
 }
 
 .footer-note {

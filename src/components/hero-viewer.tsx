@@ -94,17 +94,6 @@ export function HeroViewer({
           className="hero-image"
         />
         <div className="hero-overlay">
-          <div className="hero-meta">
-            <span className="source">
-              {current.source}
-            </span>
-            <p className="caption">
-              {current.caption}
-            </p>
-            <span className="subcaption">
-              {current.subcaption}
-            </span>
-          </div>
           <div className="controls" aria-label="Gallery controls">
             <button
               type="button"

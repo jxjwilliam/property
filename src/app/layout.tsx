@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Property Media Gallery",
   description:
     "A cinematic carousel for condo and environment shots, designed for fast browsing on desktop and mobile.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

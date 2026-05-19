@@ -36,15 +36,6 @@ export function Filmstrip({ items, activeIndex, onSelect }: FilmstripProps) {
                 className="frame-image"
               />
             </div>
-            <div className="card-meta">
-              <div>
-                <strong>{item.caption}</strong>
-                <span>{item.source}</span>
-              </div>
-              <span className="card-index">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-            </div>
           </button>
         );
       })}
