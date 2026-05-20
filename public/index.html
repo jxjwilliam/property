@@ -565,6 +565,8 @@
       ...Array.from({ length: 21 }, (_, index) => 27 + index)
     ];
 
+    const rewNumbers = Array.from({ length: 34 }, (_, index) => index + 1).filter((number) => number !== 13);
+
     const galleryGroups = [
       {
         key: 'all',
@@ -574,7 +576,7 @@
           ...phoneFiles,
           'scraped-media__matterport__image-001.jpg',
           ...realtorNumbers.map((number) => `scraped-media__realtor-ca__image-${String(number).padStart(3, '0')}.jpg`),
-          ...Array.from({ length: 34 }, (_, index) => `scraped-media__rew-ca__image-${String(index + 1).padStart(3, '0')}.jpeg`)
+          ...rewNumbers.map((number) => `scraped-media__rew-ca__image-${String(number).padStart(3, '0')}.jpeg`)
         ]
       },
       {
@@ -599,7 +601,7 @@
         key: 'rew',
         label: 'REW.ca',
         description: 'MLS and market listing set',
-        files: Array.from({ length: 34 }, (_, index) => `scraped-media__rew-ca__image-${String(index + 1).padStart(3, '0')}.jpeg`)
+        files: rewNumbers.map((number) => `scraped-media__rew-ca__image-${String(number).padStart(3, '0')}.jpeg`)
       }
     ];
 

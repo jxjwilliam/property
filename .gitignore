@@ -40,3 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 .github/
 .sisyphus/
+assets
+output

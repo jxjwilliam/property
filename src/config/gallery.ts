@@ -14,6 +14,8 @@ const realtorNumbers = [
   ...Array.from({ length: 21 }, (_, i) => 27 + i),
 ];
 
+const rewNumbers = Array.from({ length: 34 }, (_, i) => i + 1).filter((n) => n !== 13);
+
 export interface GalleryGroup {
   key: string;
   label: string;
@@ -44,7 +46,7 @@ export const galleryGroups: GalleryGroup[] = [
       ...phoneFiles,
       "scraped-media__matterport__image-001.jpg",
       ...realtorNumbers.map((n) => `scraped-media__realtor-ca__image-${String(n).padStart(3, "0")}.jpg`),
-      ...Array.from({ length: 34 }, (_, i) => `scraped-media__rew-ca__image-${String(i + 1).padStart(3, "0")}.jpeg`),
+      ...rewNumbers.map((n) => `scraped-media__rew-ca__image-${String(n).padStart(3, "0")}.jpeg`),
     ],
   },
   {
@@ -69,7 +71,7 @@ export const galleryGroups: GalleryGroup[] = [
     key: "rew",
     label: "REW.ca",
     description: "MLS and market listing set",
-    files: Array.from({ length: 34 }, (_, i) => `scraped-media__rew-ca__image-${String(i + 1).padStart(3, "0")}.jpeg`),
+    files: rewNumbers.map((n) => `scraped-media__rew-ca__image-${String(n).padStart(3, "0")}.jpeg`),
   },
 ];
 
